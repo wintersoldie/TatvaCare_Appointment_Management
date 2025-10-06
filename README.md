@@ -1,15 +1,14 @@
-# TatvaCare Appointment Management
+# 🩺 TatvaCare Appointment Management System
 
-## Overview
-TatvaCare Appointment Management is a **full-stack web application** built using  
-**ASP.NET Core 8 (Web API)** for the backend and **Angular 17** for the frontend.
+## 📘 Overview
+**TatvaCare Appointment Management** is a full-stack web application built with  
+**ASP.NET Core 8 (Web API)** and **Angular 17**, designed to simplify the scheduling and tracking of patient appointments.  
 
-It allows users to **create, view, update, and delete** doctor-patient appointments  
-with **JWT-based authentication**, **SQLite database**, and a **clean, responsive UI**.
+This system provides doctors and patients with an easy way to manage appointments, view schedules, and perform CRUD operations — all wrapped in a responsive and secure interface.
 
 ---
 
-## Tech Stack
+## 🧩 Tech Stack
 
 | Layer | Technology |
 |--------|-------------|
@@ -17,8 +16,121 @@ with **JWT-based authentication**, **SQLite database**, and a **clean, responsiv
 | Backend | ASP.NET Core 8 Web API |
 | Database | SQLite |
 | Authentication | JSON Web Token (JWT) |
+| UI Design | Bootstrap 5, Font Awesome |
 
 ---
 
-## Project Structure
+## 🏗️ System Architecture
 
+[ Angular 17 Frontend ] ←→ [ .NET 8 Web API ] ←→ [ SQLite Database ]
+│ │ │
+│ JWT Auth Header │ EF Core ORM │
+▼ ▼ ▼
+User Interface Controllers & Services Data Models
+
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 🖥 Backend Setup (ASP.NET Core 8 API)
+
+1. Navigate to the backend folder:
+   ```bash
+   cd Project_Backend
+Restore dependencies:
+
+bash
+Copy code
+dotnet restore
+Run the backend API:
+
+bash
+Copy code
+dotnet run
+The API will start at:
+
+arduino
+Copy code
+http://localhost:5234
+🌐 Frontend Setup (Angular 17)
+Navigate to the frontend folder:
+
+bash
+Copy code
+cd Project_Frontend
+Install dependencies:
+
+bash
+Copy code
+npm install
+Run the Angular app:
+
+bash
+Copy code
+ng serve
+Open in browser:
+
+arduino
+Copy code
+http://localhost:4200
+🔑 Features Implemented
+Category	Description
+Authentication	JWT-based login/logout with token storage in session
+Appointments CRUD	Create, Read, Update, Delete appointments with validation
+Search & Filter	Filter appointments by doctor or patient name
+Pagination	View 5 records per page with previous/next navigation
+Validation	Start date/time must be earlier than end date/time
+Reactive Forms	Angular reactive forms for reliability and clarity
+UI/UX	Modern Bootstrap design with hover effects and alternating rows
+Security	Protected API endpoints using Bearer token authentication
+Error Handling	Graceful UI alerts and console-level debugging support
+
+🧠 Assumptions
+Demo login credentials: demoUser / demoPass
+
+JWT is generated for demo authentication only.
+
+SQLite database (appointments.db) is used for simplicity.
+
+Backend runs at http://localhost:5234
+
+Frontend runs at http://localhost:4200
+
+🧩 API Endpoints Summary
+HTTP Method	Endpoint	Description
+POST	/api/auth/login	Authenticate and generate JWT token
+GET	/api/appointment	Get all appointments
+POST	/api/appointment	Create a new appointment
+PUT	/api/appointment/{id}	Update existing appointment
+DELETE	/api/appointment/{id}	Delete an appointment
+
+🧭 Future Enhancements
+✅ Add Doctor and Patient user roles
+
+✅ Email/SMS reminders for appointments
+
+✅ Implement appointment calendar view
+
+✅ Add user registration & password hashing
+
+✅ Deploy using Azure Web App or cloud hosting
+
+🧾 Submission Format (As per Assignment)
+✅ Include both backend and frontend folders in the repo
+✅ Include this README.md with setup steps and assumptions
+✅ Submit the GitHub repository link
+
+👨‍💻 Author
+Shreyash Raghubanshi
+📧 [soldierwinter013@gmail.com]
+💼 LinkedIn
+🐙 GitHub
+
+Developed as part of the TatvaCare Full-Stack Assignment — demonstrating secure APIs, clean Angular architecture, and thoughtful UI/UX design.
+
+yaml
+Copy code
+
+---
