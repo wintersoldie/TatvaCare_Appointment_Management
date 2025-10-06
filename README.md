@@ -113,16 +113,10 @@ Frontend runs at http://localhost:4200
 
 ✅ Deploy using Azure Web App or cloud hosting
 
-🧾 Submission Format (As per Assignment)
-✅ Include both backend and frontend folders in the repo
-✅ Include this README.md with setup steps and assumptions
-✅ Submit the GitHub repository link
 
 👨‍💻 Author
 Shreyash Raghubanshi
 📧 [soldierwinter013@gmail.com]
-💼 LinkedIn
-🐙 GitHub
 
 Developed as part of the TatvaCare Full-Stack Assignment — demonstrating secure APIs, clean Angular architecture, and thoughtful UI/UX design.
 
