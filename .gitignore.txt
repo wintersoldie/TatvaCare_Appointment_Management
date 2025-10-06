@@ -1,0 +1,28 @@
+# Ignore Visual Studio temporary files
+.vs/
+*.user
+*.suo
+*.vscode/
+
+# Build results
+bin/
+obj/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.exe
+*.dll
+*.pdb
+*.log
+
+# Ignore Angular node_modules
+Project_Frontend/node_modules/
+Project_Frontend/dist/
+
+# Ignore environment & DB files
+Project_Frontend/src/environments/environment*.ts
+Project_Backend/appointments.db
+*.db-shm
+*.db-wal

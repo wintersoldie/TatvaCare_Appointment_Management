@@ -1,0 +1,59 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.appointment-list {
+  margin-top: 1rem;
+}
+
+.appointment-list {
+  .appointment-row {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid #e4e4e4;
+    
+    // ✅ Base style for all rows
+    background-color: #f9fafb; // light gray base
+    &:hover {
+      background-color: #e9f1ff; // soft blue on hover
+      transform: scale(1.01);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    // ✅ Alternating row colors
+    &.row-even {
+      background-color: #f9fafb;
+    }
+    &.row-odd {
+      background-color: #ffffff;
+    }
+
+    // ✅ Minor spacing improvements
+    .fw-semibold {
+      font-size: 1rem;
+    }
+
+    .text-secondary {
+      color: #6c757d;
+    }
+  }
+}
+
+.appointment-row {
+  background-color: #fff;
+  border-left: 4px solid #0d6efd;
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+  }
+}
+
+button i {
+  font-size: 1rem;
+}
+
+.text-muted i {
+  opacity: 0.6;
+}
