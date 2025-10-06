@@ -68,17 +68,19 @@ Open in browser:
 
 arduino
 http://localhost:4200
-🔑 Features Implemented
-Category	Description
-Authentication	JWT-based login/logout with token storage in session
-Appointments CRUD	Create, Read, Update, Delete appointments with validation
-Search & Filter	Filter appointments by doctor or patient name
-Pagination	View 5 records per page with previous/next navigation
-Validation	Start date/time must be earlier than end date/time
-Reactive Forms	Angular reactive forms for reliability and clarity
-UI/UX	Modern Bootstrap design with hover effects and alternating rows
-Security	Protected API endpoints using Bearer token authentication
-Error Handling	Graceful UI alerts and console-level debugging support
+
+| Category              | Description                                                     |
+| --------------------- | --------------------------------------------------------------- |
+| **Authentication**    | JWT-based login/logout with token storage in session            |
+| **Appointments CRUD** | Create, Read, Update, Delete appointments with validation       |
+| **Search & Filter**   | Filter appointments by doctor or patient name                   |
+| **Pagination**        | View 5 records per page with previous/next navigation           |
+| **Validation**        | Start date/time must be earlier than end date/time              |
+| **Reactive Forms**    | Angular reactive forms for reliability and clarity              |
+| **UI/UX**             | Modern Bootstrap design with hover effects and alternating rows |
+| **Security**          | Protected API endpoints using Bearer token authentication       |
+| **Error Handling**    | Graceful UI alerts and console-level debugging support          |
+
 
 🧠 Assumptions
 Demo login credentials: demoUser / demoPass
@@ -91,13 +93,14 @@ Backend runs at http://localhost:5234
 
 Frontend runs at http://localhost:4200
 
-🧩 API Endpoints Summary
-HTTP Method	Endpoint	Description
-POST	/api/auth/login	Authenticate and generate JWT token
-GET	/api/appointment	Get all appointments
-POST	/api/appointment	Create a new appointment
-PUT	/api/appointment/{id}	Update existing appointment
-DELETE	/api/appointment/{id}	Delete an appointment
+| HTTP Method | Endpoint                | Description                         |
+| ----------- | ----------------------- | ----------------------------------- |
+| `POST`      | `/api/auth/login`       | Authenticate and generate JWT token |
+| `GET`       | `/api/appointment`      | Get all appointments                |
+| `POST`      | `/api/appointment`      | Create a new appointment            |
+| `PUT`       | `/api/appointment/{id}` | Update existing appointment         |
+| `DELETE`    | `/api/appointment/{id}` | Delete an appointment               |
+
 
 🧭 Future Enhancements
 ✅ Add Doctor and Patient user roles
