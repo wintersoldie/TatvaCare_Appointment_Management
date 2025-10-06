@@ -42,38 +42,31 @@ User Interface Controllers & Services Data Models
 Restore dependencies:
 
 bash
-Copy code
 dotnet restore
 Run the backend API:
 
 bash
-Copy code
 dotnet run
 The API will start at:
 
 arduino
-Copy code
 http://localhost:5234
 🌐 Frontend Setup (Angular 17)
 Navigate to the frontend folder:
 
 bash
-Copy code
 cd Project_Frontend
 Install dependencies:
 
 bash
-Copy code
 npm install
 Run the Angular app:
 
 bash
-Copy code
 ng serve
 Open in browser:
 
 arduino
-Copy code
 http://localhost:4200
 🔑 Features Implemented
 Category	Description
@@ -129,8 +122,5 @@ Shreyash Raghubanshi
 🐙 GitHub
 
 Developed as part of the TatvaCare Full-Stack Assignment — demonstrating secure APIs, clean Angular architecture, and thoughtful UI/UX design.
-
-yaml
-Copy code
 
 ---
